@@ -10,11 +10,12 @@ Pre-conditions:
 4. Create docker-host on GCP
 5. Create firewall rule in your project to allow port:9292 with network tag "docker-machine" from any IP.
 
+
 Usage:
-
 1. Clone repository
-2. ```cd microsevices```
-3. ```docker build -t reddit:latest .```
-4. ```docker run --name reddit -d --network=host reddit:latest```
+2. ```cd microservices```
+2. ```docker-machine ls```
+3. ```eval $(docker-machine env docker-host)```
+4. ```docker-compose up -d```
 
-Checking: Open browser and type "your_instance_ip":9292
+To check: Open browser and type "your_instance_ip":9292
