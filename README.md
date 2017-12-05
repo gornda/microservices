@@ -1,6 +1,6 @@
 # microservices
 
-Educational repository. Allows to prepare docker image for sample application and run it on GCP.
+Educational repository. Allows to prepare docker image for sample application with prometheus monitoring and run it on GCP.
 
 Pre-conditions:
 
@@ -18,4 +18,4 @@ Usage:
 3. ```eval $(docker-machine env docker-host)```
 4. ```docker-compose up -d```
 
-To check: Open browser and type "your_instance_ip":9292
+To check: Open browser and type "your_instance_ip":9292 - sample application should appear, type in browser "your_instance_ip":9090 - prometheus web interface should appear.
