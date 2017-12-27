@@ -80,15 +80,3 @@ services:
 
 volumes:
   grafana_data:
-
-networks:
-  back_net:
-    ipam:
-      driver: default
-      config:
-        - subnet: ${BACK_SUBNET}
-  front_net:
-    ipam:
-      driver: default
-      config:
-        - subnet: ${FRONT_SUBNET}
