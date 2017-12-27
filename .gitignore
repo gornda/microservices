@@ -5,3 +5,4 @@ lib/
 .Python
 Pipfile
 pip-selfcheck.json
+ex.docker-compose.yml
